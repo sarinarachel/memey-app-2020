@@ -5,15 +5,19 @@
 }
 
 .App-header {
-  min-height: 3rem;
+  position: absolute;
+  width: 100vw;
+  height: 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-  padding-top: .5rem;
-  padding-bottom: .5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: rgba(255, 255, 255, 0.7);
+  z-index: 1;
 }
 
 .input-wrap{
@@ -22,7 +26,8 @@
 }
 
 .memes{
-  height:calc(100vh - 3.5rem);
+  height: calc(100vh - 5.5rem);
+  padding-top: 5.5rem;
   overflow: auto;
   display: flex;
   flex-wrap: wrap;
@@ -52,6 +57,12 @@
 
 .meme:hover .meme-title{
   display:block;
+}
+
+.progress-bar{
+  position: absolute;
+  padding-top: 5rem;
+  width: 100vw;
 }
 
 html{
